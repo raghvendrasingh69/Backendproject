@@ -1,0 +1,105 @@
+<form action="rate.php" method="POST" class="mt-4">
+    <strong>Rate this:</strong>
+    <input type="radio" name="rating" value="1" required> 1 
+    <input type="radio" name="rating" value="2"> 2 
+    <input type="radio" name="rating" value="3"> 3 
+    <input type="radio" name="rating" value="4"> 4 
+    <input type="radio" name="rating" value="5"> 5 
+    <button type="submit" class="bg-blue-500 text-white p-2 rounded-sm ml-2">Comment</button>
+</form>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <title>Project</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-700 p-2  bg-linear-to-r from-cyan-500 to-blue-500 text-white  shadow-lg ">
+    
+    <!-- <header class="h-14 bg-linear-to-r from-cyan-500 to-blue-500 text-white  shadow-md p-30"> -->
+        <!-- <div class="container mx-auto flex justify-between items-center"> -->
+            <div class="flex-col  items-center gap-4 text-white ">      
+                <img src="/images/emblem-dark.png" alt="Logo" class=" w-10 ml-15   ">
+                <h1 class="text-3xl  font-bold font-serif ml-15 bgimag">ONE ID PENSION SYSTEM</h1>
+                <h2 class="text-lg font-semibold ml-15 ">Government of India</h2>
+            </div>
+            <div class="flex justify-end items-end p-4 "> 
+                <a href="/Project_Frontend/Login_page.html" class= " bg-blue-600 p-2 rounded text-white hover:text-blue-800 mr-4">Log in</a>
+                <a href="/Project_Frontend/Registor.html" class="bg-blue-600 text-white hover:bg-blue-800  p-2 rounded">Sign Up</a>
+            </div>
+            <span class=" flex-row flex justify-end items-end gap-3 mr-2">
+                <input c type="text" placeholder="Type Keyword" class="p-1 rounded-xl bg-gray-300 ">
+                <button class="bg-yellow-500 text-white p-1 rounded-sm ">Search</button>
+                <button class="bg-gray-300 text-black p-1 rounded-xl ml-2">Advanced Search</button>
+            </span>
+        </div>
+    </header>
+
+     <nav class="bg-blue-600  p-2 rounded-b-2xl shadow-2xl mt-2"> 
+        <div class="container mx-auto">
+            <a href="#" class="text-white font-semibold">Home</a>
+            <span class="mx-2 text-white"> >> </span>
+            <a href="#" class="text-white">National Pension System - eNPS Services</a>
+            
+            <nav class="flex justify-end ">
+                <ul class="flex  gap-4 ">
+                  <li><a href="#" class=" p-1 rounded text-white hover:text-blue-800 hover:underline">Home</a></li>
+                  <li><a href="#" class=" p-1 rounded text-white hover:text-blue-800 hover:underline">About</a></li>
+                  <li><a href="#" class="  p-1 rounded text-white hover:text-blue-800 hover:underline">Contact</a></li>
+                </ul>
+              </nav>
+        
+        </div>
+    </nav> 
+    
+    
+    <main class="container mx-auto my-8 flex">
+        
+        <aside class="w-1/3 bg-white shadow-md rounded p-4">
+            <h2 class="font-bold mb-4">Services related to</h2>
+            <ul class="list-disc ml-5">
+                <li>Education and Learning</li>
+                <li>Health and Wellness</li>
+                <li>Electricity, Water and Local services</li>
+                <li>Money and Taxes</li>
+                <li>Jobs</li>
+                <li>Justice, Law and Grievances</li>
+                <li>Travel and Tourism</li>
+                <li>Business and Self-employed</li>
+                <li>Births, Deaths, Marriages and Child care</li>
+                <li>Pension and Benefits</li>
+            </ul>
+        </aside>
+
+      
+        <section class="w-2/3 ml-4 bg-white shadow-md rounded p-4">
+            <h2 class="font-bold">National Pension System - eNPS Services</h2>
+            <p class="mt-2">The eNPS (National Pension System) is an online platform that facilitates easy registration and management of Pension Accounts for Indian citizens. It allows individuals to open a Pension Account, make contributions, and manage their retirement planning.</p>
+            <div class="mt-4">
+                <strong>Rate this:</strong>
+                <input type="radio" name="rating" value="1"> 1 
+                <input type="radio" name="rating" value="2"> 2 
+                <input type="radio" name="rating" value="3"> 3 
+                <input type="radio" name="rating" value="4"> 4 
+                <input type="radio" name="rating" value="5"> 5 
+                <button class="bg-blue-500 text-white p-2 rounded-sm ml-2">Comment</button>
+            </div>
+            <h3 class="mt-4 font-semibold">Related Links</h3>
+            <ul class="mt-2">
+                <li><a href="#" class="text-blue-500">Registration for National Pension System NRI and OCI</a></li>
+                <li>Fully Online</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center mt-20 p-2">
+        <p>&copy; 2023 National Government Services Portal. All rights reserved.</p>
+        <p class="text-yellow-500">An Initiative Under <a href="#" class="text-white underline">india.gov.in</a></p>
+    </footer>
+   
+</body>
+</html> connect the html with php and give complete code after connecting them
