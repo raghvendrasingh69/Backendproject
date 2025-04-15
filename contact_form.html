@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Form</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-green-100">
+    <h2 class="text-center text-2xl font-bold mt-5 mb-5">Tailwind CSS Form Example</h2>
+
+    <form action="form_process.php" method="POST" class="bg-white w-2/3 mx-auto p-6 rounded-xl shadow-2xl text-black">
+        <label class="font-semibold mb-1 block">Name</label>
+        <input type="text" name="name" required class="border border-black w-full p-2 rounded mb-4" placeholder="Enter Your Name">
+
+        <label class="font-semibold mb-1 block">Email</label>
+        <input type="email" name="email" required class="border border-black w-full p-2 rounded mb-4" placeholder="Enter Your Email">
+
+        <label class="font-semibold mb-1 block">Password</label>
+        <input type="password" name="password" required class="border border-black w-full p-2 rounded mb-4" placeholder="Enter Your Password">
+
+        <label class="font-semibold mb-1 block">Message</label>
+        <textarea name="message" required class="border border-black w-full p-2 rounded h-40 mb-4" placeholder="Enter Your Message"></textarea>
+
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-800">Submit</button>
+    </form>
+</body>
+</html>
