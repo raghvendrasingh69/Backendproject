@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensioners' Portal Clone</title>
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-blue-700 p-2 text-white shadow-lg">
+        <div class="flex-col items-center gap-4 text-white">      
+            <img src="/images/emblem-dark.png" alt="Logo" class="w-10 ml-15">
+            <h1 class="text-3xl font-bold font-serif ml-15">ONE ID PENSION SYSTEM</h1>
+            <h2 class="text-lg font-semibold ml-15">Government of India</h2>
+        </div>
+        <span class="flex-row flex justify-end items-end gap-3 mr-2">
+            <input type="text" placeholder="Type Keyword" class="p-1 rounded-xl bg-black">
+            <button class="bg-yellow-500 text-white p-1 rounded-sm">Search</button>
+        </span>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="text-white text-lg font-bold">Pensioners' Portal</div>
+        <div class="container mx-auto flex justify-between items-center">
+            <ul class="flex gap-4">
+                <li><a href="#" class="text-white hover:text-blue-800 hover:underline">About Us</a></li>
+                <li><a href="#" class="text-white hover:text-blue-800 hover:underline">Pension</a></li>
+                <li><a href="#" class="text-white hover:text-blue-800 hover:underline">Citizens</a></li>
+                <li><a href="#" class="text-white hover:text-blue-800 hover:underline">Grievance</a></li>
+                <li><a href="#" class="text-white hover:text-blue-800 hover:underline">FAQs</a></li>
+                <li><a href="/Project_Frontend/gallery.html" class="text-white hover:text-blue-800 hover:underline">Gallery</a></li>
+                <li><a href="/Project_Frontend/One_india_pension.html" class="text-white hover:text-blue-800 hover:underline">Dashboard</a></li>
+                <li><a href="#contact" class="bg-red-300 p-3 m-2 rounded-xl text-blue-900 shadow-inner border-2 border-black shadow-red-400 hover:shadow-amber-800">Contact Us</a></li>
+                <p class="bg-amber-300 p-1 m-2 rounded-xl border-2 border-amber-500 focus:ring-4 focus:bg-lime-400 ring-offset-2 ring-offset-red-400">
+                    <a href="#">Pension Calculator</a>
+                </p>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="bg-blue-700 text-white p-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-2xl font-semibold">Welcome to the Pensioners' Portal</h1>
+            <p class="mt-2">Central Civil Services (Extraordinary Pension) Rules, 2025</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        <h2 class="text-lg font-bold mb-4">New Notification:</h2>
+        <div class="bg-white p-4 rounded shadow-lg">
+            <h3 class="text-xl font-semibold">Central Civil Services (Extraordinary Pension) Rules, 2023 (30/01/2023)</h3>
+        </div>
+
+        <section class="mt-6">
+            <h2 class="text-lg font-bold mb-2">About Us</h2>
+            <p>This is a sample text for the About Us section.</p>
+        </section>
+
+        <section class="mt-6">
+            <h2 class="text-lg font-bold mb-2">FAQs</h2>
+            <p>This is a sample text for the FAQ section.</p>
+        </section>
+    </main>
+
+    <!-- ✅ Contact Us Form Section -->
+    <section id="contact" class="mt-10 bg-white p-6 rounded shadow-md max-w-xl mx-auto">
+        <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+        <form action="after_login.php" method="POST" class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700 font-semibold">Name:</label>
+                <input type="text" id="name" name="name" required class="w-full p-2 border rounded">
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700 font-semibold">Email:</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border rounded">
+            </div>
+            <div>
+                <label for="message" class="block text-gray-700 font-semibold">Message:</label>
+                <textarea id="message" name="message" required class="w-full p-2 border rounded"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white p-4 text-center mt-10">
+        <p>&copy; 2025 Pensioners' Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
