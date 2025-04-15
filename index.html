@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Pension Account</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-yellow-200 p-10">
+    <h2 class="text-center text-2xl font-bold mt-5 mb-2">Create your Pension Account</h2>
+    <p class="text-center">Already have an Account? 
+        <a href="/Project_Frontend/Login_page.html" class="border-2 bg-blue-700 text-white p-1 rounded-md">Log in</a>
+    </p>
+
+    <form method="POST" action="register.php" class="bg-white w-120 rounded-xl mt-10 text-white pt-2 border-2 p-5 shadow-2xl mx-auto max-w-xl">
+        <p class="text-black font-semibold mb-1 mt-5">Name</p>
+        <input type="text" name="name" class="border border-black w-full p-2 rounded text-black" placeholder="Enter Your Name" required>
+
+        <p class="text-black font-semibold mb-1 mt-2">Email</p>
+        <input type="email" name="email" class="border border-black w-full p-2 rounded text-black" placeholder="Enter Your Email" required>
+
+        <p class="text-black font-semibold mb-1 mt-2">Contact no</p>
+        <input type="number" name="contact" class="border border-black w-full p-2 rounded text-black" placeholder="Enter Your Contact" required>
+
+        <p class="text-black font-semibold mb-1 mt-2">Aadhar no</p>
+        <input type="number" name="aadhar" class="border border-black w-full p-2 rounded text-black" placeholder="Enter Your Aadhar" required>
+
+        <label class="block text-gray-700 text-sm font-bold mb-2 mt-5">Choose Your Gender</label>
+        <select name="gender" class="block w-full bg-white border border-gray-300 rounded-md p-2 text-gray-700" required>
+            <option value="" disabled selected>Select Option</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Transgender</option>
+        </select>
+
+        <label class="block text-gray-700 text-sm font-bold mb-2 mt-5">Choose Your State</label>
+        <select name="state" class="block w-full bg-white border border-gray-300 rounded-md p-2 text-gray-700" required>
+            <option value="" disabled selected>Select your State</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Karnataka">Karnataka</option>
+        </select>
+
+        <button type="submit" class="mt-4 w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-800 text-lg">Create Your Account</button>
+    </form>
+</body>
+</html>
